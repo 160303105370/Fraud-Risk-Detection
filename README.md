@@ -70,22 +70,4 @@ The hybrid model preserved recall while reducing false positives by ~17%, improv
 
 ---
 
-## 📊 Visual Insights
-
-| Plot | Description |
-|------|--------------|
-| ![AE Loss](reports/ae_loss.png) | AE training vs validation loss curve – shows stable learning of normal transactions. |
-| ![Recon Error Distribution](reports/recon_error_dist.png) | Fraud transactions show higher reconstruction error than normal ones. |
-| ![Precision Recall](reports/pr_curve.png) | Hybrid curve dominates baseline, indicating better fraud detection balance. |
-| ![Feature Importance](reports/feature_importance.png) | `recon_error` ranks among top predictors, confirming its contribution. |
-
----
-
-## Next Improvements
-
-1. Add time-based features (transaction hour, velocity) for behavioral context.
-2. Segment thresholds per user group for adaptive fraud detection.
-3. Integrate SHAP explainability to interpret model decisions.
-4. Deploy via Flask API + Streamlit dashboard for real-time scoring and visualization.
-
 
