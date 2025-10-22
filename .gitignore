@@ -1,0 +1,53 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.joblib
+*.log
+*.tmp
+*.swp
+.DS_Store
+.ipynb_checkpoints/
+.env
+.venv/
+venv/
+*.egg-info/
+*.egg
+build/
+dist/
+
+# --- Data ---
+data/raw/*
+data/processed/*
+!data/processed/README.md   # allow placeholder if needed
+!data/raw/README.md         # allow placeholder if needed
+
+# --- Models ---
+models/*
+!models/README.md           # optional placeholder
+
+# --- Reports / Visuals ---
+reports/*.png
+reports/*.jpg
+reports/*.jpeg
+reports/*.html
+
+# --- Jupyter / VS Code ---
+.vscode/
+.idea/
+*.code-workspace
+*.ipynb_checkpoints
+*.nbconvert.ipynb
+notebooks/.ipynb_checkpoints
+
+# --- OS / Misc ---
+Thumbs.db
+Desktop.ini
+
+# --- Environment / Secrets ---
+kaggle.json
+.env
+*.key
+*.token
